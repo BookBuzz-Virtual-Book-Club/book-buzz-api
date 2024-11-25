@@ -72,6 +72,14 @@ rails server
 
 Visit http://localhost:3000 to view the app.
 
+### Testing
+
+Run test suites with the following command:
+
+```
+rails test
+```
+
 ## Authors
 
 <p>
