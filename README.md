@@ -1,24 +1,82 @@
-# README
+# book-buzz-api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API Backend built with Ruby on Rails.
 
-Things you may want to cover:
+BookBuzz is a virtual book club app that allows a user to create and join new book clubs, engage in discussion boards and rate recent reads, and receive AI-generated book recommendations.
 
-* Ruby version
+### Installation
 
-* System dependencies
+Navigate to your desired directory and use the following command to clone down:
 
-* Configuration
+```
+git clone https://github.com/BookBuzz-Virtual-Book-Club/book-buzz-api.git
+```
 
-* Database creation
+change directories into the new clone:
 
-* Database initialization
+```
+cd book-buzz-api
+```
 
-* How to run the test suite
+Install Ruby if not already installed:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+brew install ruby
+```
 
-* Deployment instructions
+Install Rails if not already installed:
 
-* ...
+```
+gem install rails
+```
+
+### PostgreSQL Database
+
+If you haven't already, install PostgreSQL with Homebrew:
+
+```
+brew install postgresql
+```
+
+then start the the PostgreSQL service:
+
+```
+brew services start postgresql
+```
+
+Create the database by running the following Rails command:
+
+```
+rails db:create
+```
+
+Run migrations to set up your tables:
+
+```
+rails db:migrate
+```
+
+(Optional) if seed data is present:
+
+```
+rails db:seed
+```
+
+### Usage
+
+To start a local server, run the following command.
+
+```
+rails server
+```
+
+Visit http://localhost:3000 to view the app.
+
+## Authors
+
+<p>
+<a href="https://github.com/robynspaulding">Robyn Spaulding </a>
+
+<a href="https://github.com/perrileah">Leah Perri </a>
+
+</p>
