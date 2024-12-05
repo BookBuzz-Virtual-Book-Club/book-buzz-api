@@ -18,4 +18,10 @@ Rails.application.routes.draw do
   get "/books/:id" => "books#show"
   patch "/books/:id" => "books#update"
   delete "/books/:id" => "books#destroy"
+
+  get "/bookshelves" => "bookshelves#index"
+  post "/bookshelves" => "bookshelves#create"
+  get "/bookshelves/:id" => "bookshelves#show"
+  patch "/bookshelves/:id" => "bookshelves#update"
+  delete "/bookshelves/:id" => "bookshelves#destroy"
 end
