@@ -24,4 +24,10 @@ Rails.application.routes.draw do
   get "/bookshelves/:id" => "bookshelves#show"
   patch "/bookshelves/:id" => "bookshelves#update"
   delete "/bookshelves/:id" => "bookshelves#destroy"
+
+  get "/book_clubs" => "book_clubs#index"
+  post "/book_clubs" => "book_clubs#create"
+  get "/book_clubs/:id" => "book_clubs#show"
+  patch "/book_clubs/:id" => "book_clubs#update"
+  delete "/book_clubs/:id" => "book_clubs#destroy"
 end
