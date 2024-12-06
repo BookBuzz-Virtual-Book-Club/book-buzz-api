@@ -67,3 +67,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# To seed DB
+gem "rest-client"
+gem "json"
