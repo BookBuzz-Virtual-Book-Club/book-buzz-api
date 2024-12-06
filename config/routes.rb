@@ -30,4 +30,10 @@ Rails.application.routes.draw do
   get "/book_clubs/:id" => "book_clubs#show"
   patch "/book_clubs/:id" => "book_clubs#update"
   delete "/book_clubs/:id" => "book_clubs#destroy"
+
+  get "/posts" => "posts#index"
+  post "/posts" => "posts#create"
+  get "/posts/:id" => "posts#show"
+  patch "/posts/:id" => "posts#update"
+  delete "/posts/:id" => "posts#destroy"
 end
