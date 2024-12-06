@@ -2,7 +2,7 @@
 
 API Backend built with Ruby on Rails.
 
-BookBuzz is a virtual book club app that allows a user to create and join new book clubs, engage in discussion boards and rate recent reads, and receive AI-generated book recommendations.
+BookBuzz is a virtual book club app that allows a user to create and join new book clubs, engage in discussion boards, rate recent reads, and receive AI-generated book recommendations. Book data is sourced from Open Library API.
 
 ### Installation
 
@@ -56,7 +56,7 @@ Run migrations to set up your tables:
 rails db:migrate
 ```
 
-(Optional) if seed data is present:
+Then seed your database:
 
 ```
 rails db:seed
