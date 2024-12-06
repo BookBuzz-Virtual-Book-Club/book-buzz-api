@@ -36,4 +36,10 @@ Rails.application.routes.draw do
   get "/posts/:id" => "posts#show"
   patch "/posts/:id" => "posts#update"
   delete "/posts/:id" => "posts#destroy"
+
+  get "/discussion_boards" => "discussion_boards#index"
+  post "/discussion_boards" => "discussion_boards#create"
+  get "/discussion_boards/:id" => "discussion_boards#show"
+  patch "/discussion_boards/:id" => "discussion_boards#update"
+  delete "/discussion_boards/:id" => "discussion_boards#destroy"
 end
